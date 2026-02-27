@@ -1,0 +1,28 @@
+baseURL: "https://reabov.org"
+languageCode: "en-us"
+title: "Reabov blog"
+
+# PaperMod as a module (no theme files in your repo)
+module:
+  imports:
+    - path: github.com/adityatelange/hugo-PaperMod
+
+params:
+  description: "Minimal markdown blog"
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: false
+  ShowCodeCopyButtons: true
+  disableThemeToggle: true
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 20
